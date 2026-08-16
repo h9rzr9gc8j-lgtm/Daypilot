@@ -7,212 +7,94 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="DayPilot">
-<link rel="apple-touch-icon" href="data:image/png;base64,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">
 <title>DayPilot</title>
 <style>
-:root{
-  --bg:#090d12;--panel:#111821;--panel2:#151f2b;--text:#f4f7fb;--muted:#8ea0b5;
-  --accent:#73ffb4;--accent2:#7fb7ff;--line:#243142;--warn:#ffd36e;--danger:#ff7e8b;
-  --shadow:0 18px 60px rgba(0,0,0,.35)
-}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}
-body{min-height:100vh;background:radial-gradient(circle at 85% 0%,rgba(127,183,255,.14),transparent 36%),radial-gradient(circle at 0% 20%,rgba(115,255,180,.09),transparent 38%),var(--bg)}
-button,input,select{font:inherit}
-.app{max-width:640px;margin:0 auto;padding:calc(18px + env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom))}
-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
-.brand{display:flex;align-items:center;gap:11px}
-.logo{width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#081016;font-weight:950;box-shadow:0 8px 30px rgba(115,255,180,.16)}
-.brand h1{font-size:20px;margin:0}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}
-.iconbtn{border:1px solid var(--line);background:rgba(17,24,33,.82);color:var(--text);width:44px;height:44px;border-radius:14px;font-size:19px}
-.installbar{display:none;align-items:center;justify-content:space-between;gap:10px;border:1px solid rgba(127,183,255,.32);background:rgba(127,183,255,.08);border-radius:17px;padding:11px 12px;margin-bottom:12px;font-size:12px;color:#dfeaff}
-.installbar button{border:0;border-radius:12px;background:var(--accent2);padding:9px 11px;font-weight:850;color:#071019;white-space:nowrap}
-.hero{background:linear-gradient(180deg,rgba(21,31,43,.98),rgba(15,22,31,.98));border:1px solid var(--line);border-radius:29px;padding:21px;box-shadow:var(--shadow);overflow:hidden;position:relative}
-.hero:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-75px;top:-85px;background:radial-gradient(circle,rgba(115,255,180,.18),transparent 68%)}
-.day{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1.3px}
-.headline{font-size:30px;line-height:1.06;margin:7px 0 6px;font-weight:900;max-width:460px}
-.sub{color:var(--muted);font-size:14px;line-height:1.45;margin-bottom:16px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-.metric{background:rgba(9,13,18,.55);border:1px solid var(--line);padding:13px;border-radius:17px;min-height:91px}
-.metric .k{font-size:11px;color:var(--muted);margin-bottom:7px}.metric .v{font-size:20px;font-weight:900}.metric .s{font-size:11px;color:var(--muted);margin-top:4px}
-.mission{margin-top:11px;padding:14px 15px;border:1px solid rgba(115,255,180,.28);border-radius:17px;background:rgba(115,255,180,.07);font-size:14px;line-height:1.45}
-.mission b{color:var(--accent)}
-.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
-.action{border:0;border-radius:19px;padding:16px 12px;font-size:13px;font-weight:900;letter-spacing:.25px;min-height:60px}
-.primary{background:var(--accent);color:#07110c}.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.surprise{background:linear-gradient(135deg,#7fb7ff,#b38cff);color:#081016}
-.statusrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
-.status{font-size:10px;color:var(--muted);border:1px solid var(--line);background:#0b1118;border-radius:999px;padding:6px 9px}
-.footer{color:var(--muted);font-size:11px;text-align:center;margin-top:15px}
-dialog{border:1px solid var(--line);border-radius:25px;background:var(--panel);color:var(--text);width:min(92vw,560px);padding:0;box-shadow:var(--shadow)}
-dialog::backdrop{background:rgba(0,0,0,.69);backdrop-filter:blur(8px)}
-.modal{padding:20px}.modal h2{margin:0 0 8px;font-size:22px}.modal p{color:var(--muted);line-height:1.5;font-size:14px}
-.result{background:#0b1118;border:1px solid var(--line);padding:16px;border-radius:18px;line-height:1.55;margin-top:12px;font-size:15px}
-.close,.save,.locate{width:100%;margin-top:13px;padding:14px;border-radius:15px;border:0;font-weight:900}
-.close{background:var(--accent)}.save{background:var(--accent2)}.locate{background:var(--panel2);color:var(--text);border:1px solid var(--line)}
-.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px} label{font-size:11px;color:var(--muted)}
-input,select{width:100%;margin-top:6px;background:#0b1118;border:1px solid var(--line);border-radius:12px;color:var(--text);padding:12px;font-size:15px}
-.wide{grid-column:1/-1}.pill{display:inline-flex;gap:6px;align-items:center;font-size:11px;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:#0b1118;color:var(--muted);margin-bottom:9px}
-.steps{margin:12px 0 0;padding-left:20px;color:#dfe7f0;line-height:1.65;font-size:14px}
-@media (max-width:380px){.headline{font-size:27px}.grid,.actions{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.wide{grid-column:auto}}
+:root{--bg:#090d12;--panel:#111821;--panel2:#151f2b;--text:#f4f7fb;--muted:#8ea0b5;--accent:#73ffb4;--blue:#7fb7ff;--purple:#b38cff;--line:#243142;--shadow:0 18px 60px rgba(0,0,0,.35)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}body{min-height:100vh;background:radial-gradient(circle at 90% 0,rgba(127,183,255,.14),transparent 35%),radial-gradient(circle at 0 25%,rgba(115,255,180,.08),transparent 38%),var(--bg)}button,input,select{font:inherit}.app{max-width:680px;margin:0 auto;padding:calc(16px + env(safe-area-inset-top)) 16px calc(92px + env(safe-area-inset-bottom))}header{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}.brand{display:flex;gap:11px;align-items:center}.logo{width:45px;height:45px;border-radius:15px;background:linear-gradient(135deg,var(--accent),var(--blue));display:grid;place-items:center;color:#071016;font-weight:950}.brand h1{font-size:20px;margin:0}.brand p{margin:2px 0 0;color:var(--muted);font-size:11px}.iconbtn{width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:rgba(17,24,33,.9);color:var(--text);font-size:18px}.view{display:none}.view.active{display:block}.card{background:linear-gradient(180deg,rgba(21,31,43,.98),rgba(15,22,31,.98));border:1px solid var(--line);border-radius:27px;padding:19px;box-shadow:var(--shadow);margin-bottom:13px}.day{font-size:11px;color:var(--muted);letter-spacing:1.2px;text-transform:uppercase}.headline{font-size:29px;line-height:1.08;margin:7px 0 6px;font-weight:900}.sub{font-size:13px;line-height:1.45;color:var(--muted);margin-bottom:14px}.scores{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.score{background:#0b1118;border:1px solid var(--line);border-radius:16px;padding:11px 8px;text-align:center}.score .k{font-size:9px;color:var(--muted);text-transform:uppercase}.score .v{font-size:18px;font-weight:900;margin-top:5px}.score .s{font-size:9px;color:var(--muted);margin-top:3px}.mission{margin-top:11px;padding:14px 15px;border:1px solid rgba(115,255,180,.27);border-radius:17px;background:rgba(115,255,180,.07);font-size:14px;line-height:1.5}.mission b{color:var(--accent)}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.action{border:0;border-radius:18px;padding:15px 10px;min-height:57px;font-size:12px;font-weight:900}.primary{background:var(--accent);color:#07110c}.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.surprise{background:linear-gradient(135deg,var(--blue),var(--purple));color:#071016}.section-title{font-size:15px;font-weight:850;margin:0 0 10px}.checkgrid,.grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px}.field{background:#0b1118;border:1px solid var(--line);border-radius:16px;padding:11px}.field label{display:block;color:var(--muted);font-size:10px;margin-bottom:7px}.field input,.field select{width:100%;background:transparent;border:0;outline:0;color:var(--text);font-size:15px;font-weight:800}.wide{grid-column:1/-1}.range{display:flex;align-items:center;gap:10px}.range input{flex:1}.range strong{min-width:42px;text-align:right}.save{width:100%;margin-top:11px;padding:13px;border:0;border-radius:15px;background:var(--blue);color:#071016;font-weight:900}.quickrow{display:flex;gap:8px;overflow:auto;scrollbar-width:none}.quickrow::-webkit-scrollbar{display:none}.quick{white-space:nowrap;border:1px solid var(--line);background:#0b1118;color:var(--text);border-radius:999px;padding:9px 11px;font-size:11px;font-weight:800}.quick.done{border-color:rgba(115,255,180,.45);color:var(--accent)}.logitem{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#0b1118;border:1px solid var(--line);border-radius:16px;padding:12px;margin-top:8px}.logleft{display:flex;gap:10px;align-items:center}.logico{width:36px;height:36px;border-radius:12px;background:var(--panel2);display:grid;place-items:center}.logtitle{font-size:13px;font-weight:850}.logmeta{font-size:10px;color:var(--muted);margin-top:3px}.delete{background:transparent;border:0;color:var(--muted);font-size:16px}.empty{text-align:center;color:var(--muted);font-size:12px;padding:18px}.week{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.daydot{background:#0b1118;border:1px solid var(--line);border-radius:14px;padding:9px 3px;text-align:center;min-height:74px}.daydot.today{border-color:rgba(127,183,255,.6)}.daydot.hit{background:rgba(115,255,180,.05)}.daydot .d{font-size:9px;color:var(--muted);text-transform:uppercase}.daydot .n{font-size:13px;font-weight:900;margin:4px 0}.daydot .ico{font-size:16px}.goals{display:grid;grid-template-columns:1fr 1fr;gap:9px}.goal{background:#0b1118;border:1px solid var(--line);border-radius:16px;padding:13px}.goal .k{font-size:10px;color:var(--muted)}.goal .v{font-size:18px;font-weight:900;margin-top:5px}.bar{height:6px;border-radius:999px;background:#1e2936;margin-top:9px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--blue));border-radius:999px}.nav{position:fixed;left:50%;bottom:calc(10px + env(safe-area-inset-bottom));transform:translateX(-50%);width:min(calc(100% - 24px),650px);display:grid;grid-template-columns:repeat(4,1fr);gap:6px;background:rgba(12,17,24,.95);border:1px solid var(--line);border-radius:20px;padding:7px;backdrop-filter:blur(18px);box-shadow:0 12px 45px rgba(0,0,0,.4);z-index:10}.navbtn{background:transparent;color:var(--muted);border:0;border-radius:14px;padding:9px 4px;font-size:9px;font-weight:800}.navbtn span{display:block;font-size:18px;margin-bottom:3px}.navbtn.active{background:var(--panel2);color:var(--text)}dialog{border:1px solid var(--line);border-radius:25px;background:var(--panel);color:var(--text);width:min(92vw,570px);max-height:85vh;padding:0;box-shadow:var(--shadow)}dialog::backdrop{background:rgba(0,0,0,.7);backdrop-filter:blur(8px)}.modal{padding:19px}.modal h2{margin:0 0 7px;font-size:21px}.modal p{color:var(--muted);font-size:13px;line-height:1.5}.result{background:#0b1118;border:1px solid var(--line);padding:15px;border-radius:17px;line-height:1.55;margin-top:11px;font-size:14px}.close{width:100%;margin-top:12px;padding:13px;border-radius:15px;border:0;background:var(--accent);color:#07110c;font-weight:900}.pill{display:inline-block;font-size:10px;color:var(--muted);background:#0b1118;border:1px solid var(--line);border-radius:999px;padding:6px 9px;margin-bottom:8px}@media(max-width:400px){.headline{font-size:26px}.scores{grid-template-columns:1fr 1fr}.checkgrid,.grid2{grid-template-columns:1fr}.wide{grid-column:auto}.week{gap:4px}.daydot{padding:8px 2px}}
 </style>
 </head>
 <body>
 <main class="app">
-<header>
-  <div class="brand"><div class="logo">DP</div><div><h1>DayPilot</h1><p>Niet tracken. Beslissen.</p></div></div>
-  <button class="iconbtn" id="settingsBtn" aria-label="Instellingen">⚙️</button>
-</header>
+<header><div class="brand"><div class="logo">DP</div><div><h1>DayPilot</h1><p>Niet tracken. Beslissen.</p></div></div><button class="iconbtn" id="settingsBtn">⚙️</button></header>
 
-<div class="installbar" id="installBar">
-  <span>📲 Zet DayPilot als app op je beginscherm.</span>
-  <button id="installBtn">Installeer</button>
+<section class="view active" id="todayView">
+<div class="card">
+<div class="day" id="dayLabel"></div><div class="headline" id="headline"></div><div class="sub" id="contextLine"></div>
+<div class="scores">
+<div class="score"><div class="k">Herstel</div><div class="v" id="recoveryValue">—</div><div class="s" id="recoveryText"></div></div>
+<div class="score"><div class="k">Energie</div><div class="v" id="energyValue">—</div><div class="s">check-in</div></div>
+<div class="score"><div class="k">Tijd</div><div class="v" id="timeValue">—</div><div class="s">beschikbaar</div></div>
+<div class="score"><div class="k">Eiwit</div><div class="v" id="proteinValue">—</div><div class="s">nog te gaan</div></div>
 </div>
-
-<section class="hero">
-  <div class="day" id="dayLabel"></div>
-  <div class="headline" id="headline">Wat is nu een goed idee?</div>
-  <div class="sub" id="subline">Tijd, energie, beweging, voeding en weer → één volgende stap.</div>
-
-  <div class="grid">
-    <div class="metric"><div class="k">⚡ ENERGIE</div><div class="v" id="energyValue">7/10</div><div class="s" id="energyText"></div></div>
-    <div class="metric"><div class="k">🥩 EIWIT</div><div class="v" id="proteinValue">70 g</div><div class="s">nog te gaan vandaag</div></div>
-    <div class="metric"><div class="k">⏱️ TIJD</div><div class="v" id="timeValue">60 min</div><div class="s">beschikbaar</div></div>
-    <div class="metric"><div class="k">🚴 BEWEGING</div><div class="v" id="moveValue">45 min</div><div class="s">nog gewenst</div></div>
-  </div>
-
-  <div class="mission" id="mission"></div>
-
-  <div class="actions">
-    <button class="action primary" data-action="now">⚡ NU DOEN</button>
-    <button class="action secondary" data-action="food">🍽️ ETEN</button>
-    <button class="action secondary" data-action="train">🏋️ TRAINEN</button>
-    <button class="action surprise" data-action="surprise">🎲 VERRAS ME</button>
-  </div>
-
-  <div class="statusrow">
-    <div class="status" id="weatherStatus">☁️ Weer handmatig</div>
-    <div class="status">💾 Lokaal opgeslagen</div>
-    <div class="status" id="appStatus">🌐 Webapp</div>
-  </div>
+<div class="mission" id="mission"></div>
+<div class="actions"><button class="action primary" data-action="now">⚡ NU DOEN</button><button class="action secondary" data-action="food">🍽️ ETEN</button><button class="action secondary" data-action="train">🏋️ TRAINEN</button><button class="action surprise" data-action="surprise">🎲 VERRAS ME</button></div>
+</div>
+<div class="card"><div class="section-title">10-seconden check-in</div><div class="checkgrid">
+<div class="field wide"><label>Energie</label><div class="range"><input id="energyRange" type="range" min="1" max="10"><strong id="energyRangeVal"></strong></div></div>
+<div class="field wide"><label>Spierpijn / vermoeidheid</label><div class="range"><input id="sorenessRange" type="range" min="1" max="10"><strong id="sorenessRangeVal"></strong></div></div>
+<div class="field"><label>Vrije tijd</label><select id="timeSelect"><option value="20">20 min</option><option value="30">30 min</option><option value="45">45 min</option><option value="60">60 min</option><option value="90">90 min</option><option value="120">2 uur</option></select></div>
+<div class="field"><label>Zin in</label><select id="moodSelect"><option value="maaktNietUit">Maakt niet uit</option><option value="kracht">Kracht</option><option value="buiten">Buiten</option><option value="zwemmen">Zwemmen</option><option value="rustig">Rustig</option></select></div>
+</div><button class="save" id="saveCheckin">Check-in opslaan</button></div>
+<div class="card"><div class="section-title">Snel loggen</div><div class="quickrow"><button class="quick" data-log="strength">🏋️ Kracht</button><button class="quick" data-log="swim">🏊 1 km zwemmen</button><button class="quick" data-log="bike">🚴 Fietsen</button><button class="quick" data-log="walk">🚶 Wandelen</button><button class="quick" data-log="rest">🛋️ Rustdag</button></div></div>
 </section>
-<div class="footer">DayPilot v0.2 · PWA · klaar voor beginscherm</div>
+
+<section class="view" id="logView">
+<div class="card"><div class="section-title">Training toevoegen</div><div class="grid2"><div class="field"><label>Type</label><select id="logType"><option value="strength">Kracht</option><option value="swim">Zwemmen</option><option value="bike">Fietsen</option><option value="walk">Wandelen</option><option value="run">Hardlopen</option><option value="rest">Rust</option></select></div><div class="field"><label>Duur (min)</label><input id="logDuration" type="number" value="45" min="0" max="600"></div><div class="field wide"><label>Notitie</label><input id="logNote" placeholder="bijv. bovenlichaam / rustig tempo"></div></div><button class="save" id="addLogBtn">Opslaan</button></div>
+<div class="card"><div class="section-title">Recente activiteiten</div><div id="logList"></div></div>
+</section>
+
+<section class="view" id="weekView">
+<div class="card"><div class="section-title">Deze week</div><div class="week" id="weekGrid"></div></div>
+<div class="card"><div class="section-title">Weekscore</div><div class="goals">
+<div class="goal"><div class="k">KRACHT</div><div class="v" id="strengthGoal"></div><div class="bar"><div class="fill" id="strengthFill"></div></div></div>
+<div class="goal"><div class="k">ZWEMMEN</div><div class="v" id="swimGoal"></div><div class="bar"><div class="fill" id="swimFill"></div></div></div>
+<div class="goal"><div class="k">FIETSEN</div><div class="v" id="bikeGoal"></div><div class="bar"><div class="fill" id="bikeFill"></div></div></div>
+<div class="goal"><div class="k">CHECK-INS</div><div class="v" id="checkinGoal"></div><div class="bar"><div class="fill" id="checkinFill"></div></div></div>
+</div></div>
+</section>
+
+<section class="view" id="goalsView">
+<div class="card"><div class="section-title">Jouw doelen</div><div class="grid2">
+<div class="field"><label>Eiwit per dag (g)</label><input id="goalProtein" type="number"></div><div class="field"><label>Kracht per week</label><input id="goalStrength" type="number"></div><div class="field"><label>Zwemmen per week</label><input id="goalSwim" type="number"></div><div class="field"><label>Fietsminuten per week</label><input id="goalBike" type="number"></div></div><button class="save" id="saveGoals">Doelen opslaan</button></div>
+<div class="card"><div class="section-title">Voeding vandaag</div><div class="grid2"><div class="field"><label>Eiwit gegeten (g)</label><input id="proteinEaten" type="number" min="0"></div><div class="field"><label>Water (glazen)</label><input id="waterGlasses" type="number" min="0" max="30"></div></div><button class="save" id="saveNutrition">Bijwerken</button></div>
+</section>
 </main>
 
-<dialog id="actionDialog"><div class="modal">
-  <div class="pill" id="resultPill">DAYPILOT BESLISSING</div>
-  <h2 id="resultTitle"></h2>
-  <div class="result" id="resultBody"></div>
-  <button class="close" id="closeAction">Klaar</button>
-</div></dialog>
+<nav class="nav"><button class="navbtn active" data-view="today"><span>☀️</span>Vandaag</button><button class="navbtn" data-view="log"><span>➕</span>Log</button><button class="navbtn" data-view="week"><span>📅</span>Week</button><button class="navbtn" data-view="goals"><span>🎯</span>Doelen</button></nav>
 
-<dialog id="settingsDialog"><div class="modal">
-  <h2>Jouw dag</h2>
-  <p>Voor nu vul je energie, voeding en beschikbare tijd zelf in. Het weer kan DayPilot al automatisch ophalen via je locatie.</p>
-  <div class="formgrid">
-    <label>Naam<input id="nameInput"></label>
-    <label>Energie (1–10)<input id="energyInput" type="number" min="1" max="10"></label>
-    <label>Beschikbare tijd (min)<input id="timeInput" type="number" min="10" max="300"></label>
-    <label>Eiwit nog te gaan (g)<input id="proteinInput" type="number" min="0" max="300"></label>
-    <label>Beweegdoel nog (min)<input id="moveInput" type="number" min="0" max="240"></label>
-    <label>Weer<select id="weatherInput">
-      <option value="goed">Goed / droog</option><option value="wind">Veel wind</option>
-      <option value="regen">Regen</option><option value="heet">Warm</option>
-    </select></label>
-    <label class="wide">Waar heb je zin in?<select id="moodInput">
-      <option value="maaktNietUit">Maakt niet uit</option><option value="buiten">Buiten</option>
-      <option value="kracht">Kracht</option><option value="rustig">Rustig aan</option><option value="eten">Lekker eten</option>
-    </select></label>
-  </div>
-  <button class="locate" id="weatherBtn">📍 Gebruik mijn locatie voor het weer</button>
-  <button class="save" id="saveSettings">Opslaan & opnieuw beslissen</button>
-</div></dialog>
-
-<dialog id="installDialog"><div class="modal">
-  <div class="pill">IPHONE</div><h2>Zet DayPilot op je beginscherm</h2>
-  <p>Op iPhone installeert Safari een webapp via het Deel-menu.</p>
-  <ol class="steps"><li>Open DayPilot in <b>Safari</b>.</li><li>Tik op <b>Deel</b> (vierkant met pijltje).</li><li>Kies <b>Zet op beginscherm</b>.</li><li>Tik op <b>Voeg toe</b>.</li></ol>
-  <button class="close" id="closeInstall">Begrepen</button>
-</div></dialog>
+<dialog id="resultDialog"><div class="modal"><div class="pill" id="resultPill"></div><h2 id="resultTitle"></h2><div class="result" id="resultBody"></div><button class="close" id="closeResult">Klaar</button></div></dialog>
+<dialog id="settingsDialog"><div class="modal"><h2>DayPilot instellingen</h2><p>Weer kan automatisch via je locatie. Je check-ins, activiteiten en doelen worden lokaal op je iPhone bewaard.</p><div class="grid2"><div class="field"><label>Naam</label><input id="nameInput"></div><div class="field"><label>Weer</label><select id="weatherInput"><option value="goed">Goed / droog</option><option value="wind">Veel wind</option><option value="regen">Regen</option><option value="heet">Warm</option></select></div></div><button class="save" id="weatherBtn">📍 Weer via mijn locatie</button><button class="save" id="saveSettings">Instellingen opslaan</button><button class="close" id="closeSettings">Sluiten</button></div></dialog>
 
 <script>
-const $=s=>document.querySelector(s);
-const standalone=window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true;
-const state=JSON.parse(localStorage.getItem('daypilot-state-v02')||'null')||{name:'Dave',energy:7,time:60,protein:70,move:45,weather:'goed',mood:'maaktNietUit',weatherAuto:false,temp:null,wind:null};
-const surprises=[
-  "Pak de fiets en kies bij elke derde kruising een afslag die je normaal nooit neemt. Maximaal 45 minuten heen; terug via navigatie. Eindig met koffie of iets eiwitrijks.",
-  "Doe een 3×10-quest: 10 min wandelen, 10 min kracht (rows/push-ups/squats), 10 min keukenmissie met minimaal 30 g eiwit.",
-  "Nieuwe-plek-missie: kies een park, dijk of uitzichtpunt in de buurt waar je nog niet bewust bent geweest. Fiets erheen en maak één goede foto.",
-  "Mini-baasgevecht: 5 rondes van 5 pull-ups/rows, 10 push-ups en 15 squats. Ruim rusten; 2 reps vóór falen stoppen."
-];
-function persist(){localStorage.setItem('daypilot-state-v02',JSON.stringify(state))}
-function recommendation(kind){
-  const e=+state.energy,t=+state.time,p=+state.protein,m=+state.move;
-  const bad=state.weather==='regen'||state.weather==='wind';
-  if(kind==='food'){
-    if(p>=70)return{title:'Eiwit eerst. Geen culinaire scriptie.',body:`Ga voor 250–300 g kip, wokgroenten en rijst. Pittig erbij. Daarmee pak je grofweg 50–70 g eiwit van de <b>${p} g</b> die nog openstaat.`};
-    if(p>=35)return{title:'Eén goede maaltijd en je bent er bijna.',body:'Mik op 35–45 g eiwit: tonijn + 2 eieren + kikkererwten, of kip op brood met rauwkost.'};
-    return{title:'Voeding staat al netjes.',body:`Nog ongeveer <b>${p} g</b>. Later kwark, een shake of iets kleins is genoeg; geen halve kip arresteren.`};
-  }
-  if(kind==='train'){
-    if(e<=4)return{title:'Kort trainen, kwaliteit houden.',body:'25–35 min bovenlichaam: pull-up/row, press/push-up, lateral raise en curls. 2–3 stevige sets, geen grinders.'};
-    if(t<35)return{title:'Express-sessie.',body:'20–30 min: 4 rondes pull-ups/rows, push-ups/dips, goblet squats en shoulder press. 60–90 sec rust.'};
-    if(state.mood==='buiten'&&!bad)return{title:'Vandaag buiten pakken.',body:`Fiets ${Math.min(90,t)} minuten comfortabel. Voeg 3 × 4 min stevig doortrappen toe. Niet slopen; wel werken.`};
-    return{title:'Bovenlichaam met focus.',body:'50–60 min: pull-ups 4 sets, dumbbell bench 4, rows 3, shoulder press 3, daarna lateral raises + armen. 1–2 reps in reserve.'};
-  }
-  if(kind==='surprise')return{title:'Bonusquest geactiveerd 🎲',body:surprises[Math.floor(Math.random()*surprises.length)]};
-  if(e<=3)return{title:'Herstel wint vandaag.',body:'20–30 min rustig wandelen, goed drinken en eiwitrijk eten. Zware training overslaan.'};
-  if(m>=40&&t>=45&&!bad)return{title:'Nu: naar buiten.',body:'Pak de fiets voor 45–60 min comfortabel. Laatste 10 min rustig uitrijden. Daarna minimaal 40 g eiwit.'};
-  if(m>=30&&bad)return{title:'Binnenklus: 35–45 minuten.',body:'Compacte krachttraining: pull-up/row + push + benen + schouders. 3 rondes. Daarna 10 min rustig bewegen.'};
-  if(p>=60)return{title:'Eerst eten, daarna bewegen.',body:'Maak eerst een maaltijd met 50–60 g eiwit. Daarna 20–30 min wandelen of rustig fietsen.'};
-  return{title:'Je dag staat goed.',body:`Doe nu ${Math.min(45,t)} min bewegen op een prettig tempo en sluit daarna slim af met eten en herstel.`};
-}
-function render(){
-  const now=new Date();
-  $('#dayLabel').textContent=now.toLocaleDateString('nl-NL',{weekday:'long',day:'numeric',month:'long'}).toUpperCase();
-  $('#headline').textContent=`${state.name}, wat is nu een goed idee?`;
-  $('#energyValue').textContent=`${state.energy}/10`;
-  $('#energyText').textContent=state.energy>=7?'Prima om iets te doen':state.energy>=5?'Kan, doseer slim':'Herstel heeft voorrang';
-  $('#proteinValue').textContent=`${state.protein} g`; $('#timeValue').textContent=`${state.time} min`; $('#moveValue').textContent=`${state.move} min`;
-  const r=recommendation('now'); $('#mission').innerHTML=`<b>🎯 Hoofdmissie:</b> ${r.body.replace(/<[^>]+>/g,'').split('.')[0]}.`;
-  $('#appStatus').textContent=standalone?'📱 Geïnstalleerd':'🌐 Webapp';
-  $('#installBar').style.display=standalone?'none':'flex';
-  $('#weatherStatus').textContent=state.weatherAuto?`🌤️ ${state.temp!==null?Math.round(state.temp)+'° · ':''}${state.weather}`:'☁️ Weer handmatig';
-}
-document.querySelectorAll('[data-action]').forEach(b=>b.onclick=()=>{
-  const r=recommendation(b.dataset.action); $('#resultTitle').textContent=r.title; $('#resultBody').innerHTML=r.body;
-  $('#resultPill').textContent=b.dataset.action==='surprise'?'BONUSQUEST':'DAYPILOT BESLISSING'; $('#actionDialog').showModal();
-});
-$('#closeAction').onclick=()=>$('#actionDialog').close();
-$('#settingsBtn').onclick=()=>{
-  ['name','energy','time','protein','move','weather','mood'].forEach(k=>$('#'+k+'Input').value=state[k]);
-  $('#settingsDialog').showModal();
-};
-$('#saveSettings').onclick=()=>{
-  state.name=$('#nameInput').value.trim()||'Dave'; state.energy=Math.max(1,Math.min(10,+$('#energyInput').value||5));
-  state.time=Math.max(10,+$('#timeInput').value||30); state.protein=Math.max(0,+$('#proteinInput').value||0);
-  state.move=Math.max(0,+$('#moveInput').value||0); state.weather=$('#weatherInput').value; state.mood=$('#moodInput').value;
-  persist();render();$('#settingsDialog').close();
-};
-$('#installBtn').onclick=()=>$('#installDialog').showModal(); $('#closeInstall').onclick=()=>$('#installDialog').close();
-$('#weatherBtn').onclick=()=>{
-  if(!navigator.geolocation){alert('Locatie wordt niet ondersteund op dit toestel.');return}
-  $('#weatherBtn').textContent='Locatie en weer ophalen…';
-  navigator.geolocation.getCurrentPosition(async pos=>{
-    try{
-      const {latitude,longitude}=pos.coords;
-      const url=`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,precipitation,wind_speed_10m&timezone=auto`;
-      const res=await fetch(url); const data=await res.json(); const c=data.current||{};
-      state.temp=c.temperature_2m??null; state.wind=c.wind_speed_10m??null;
-      if((c.precipitation??0)>0) state.weather='regen';
-      else if((c.wind_speed_10m??0)>=28) state.weather='wind';
-      else if((c.temperature_2m??0)>=28) state.weather='heet';
-      else state.weather='goed';
-      state.weatherAuto=true; persist(); render(); $('#weatherInput').value=state.weather;
-      $('#weatherBtn').textContent='✅ Weer bijgewerkt via locatie';
-    }catch(e){$('#weatherBtn').textContent='⚠️ Weer ophalen mislukte';}
-  },()=>{$('#weatherBtn').textContent='⚠️ Locatietoegang niet gegeven';},{enableHighAccuracy:false,timeout:10000});
-};
-
-render();
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],KEY='daypilot-v03';
+const localKey=(d=new Date())=>{const x=new Date(d.getTime()-d.getTimezoneOffset()*60000);return x.toISOString().slice(0,10)};
+const weekStart=(d=new Date())=>{const x=new Date(d),n=(x.getDay()+6)%7;x.setHours(0,0,0,0);x.setDate(x.getDate()-n);return x};
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),pct=(v,m)=>m?clamp(Math.round(v/m*100),0,100):0;
+const meta=t=>({strength:['🏋️','Kracht'],swim:['🏊','Zwemmen'],bike:['🚴','Fietsen'],walk:['🚶','Wandelen'],run:['🏃','Hardlopen'],rest:['🛋️','Rust']}[t]||['•',t]);
+const old=JSON.parse(localStorage.getItem('daypilot-state-v02')||'null');
+const defaults={profile:{name:old?.name||'Dave'},goals:{protein:180,strength:3,swim:2,bikeMinutes:180},today:{date:localKey(),energy:old?.energy??7,soreness:4,time:old?.time??60,mood:old?.mood??'maaktNietUit',proteinEaten:Math.max(0,180-(old?.protein??70)),water:0,weather:old?.weather??'goed',weatherAuto:old?.weatherAuto??false,temp:old?.temp??null,wind:old?.wind??null},checkins:{},logs:[]};
+let state=JSON.parse(localStorage.getItem(KEY)||'null')||defaults;
+function normalize(){state.profile=state.profile||defaults.profile;state.goals={...defaults.goals,...(state.goals||{})};state.today={...defaults.today,...(state.today||{})};state.checkins=state.checkins||{};state.logs=state.logs||[];if(state.today.date!==localKey())state.today={...defaults.today,date:localKey(),weather:state.today.weather||'goed'}}normalize();
+const saveState=()=>localStorage.setItem(KEY,JSON.stringify(state));
+const latest=t=>state.logs.filter(x=>!t||x.type===t).sort((a,b)=>b.ts-a.ts)[0];
+const daysSince=x=>x?Math.floor((Date.now()-x.ts)/86400000):99;
+const proteinLeft=()=>Math.max(0,state.goals.protein-state.today.proteinEaten);
+function recovery(){let r=Math.round(state.today.energy*6.2+(11-state.today.soreness)*3.8);const recent=state.logs.filter(x=>x.ts>Date.now()-86400000&&['strength','swim','bike','run'].includes(x.type)).length;if(recent>=2)r-=8;return clamp(r,20,100)}
+function yesterday(){const d=new Date();d.setDate(d.getDate()-1);const xs=state.logs.filter(x=>x.date===localKey(d));return xs.length?'gisteren '+xs.map(x=>meta(x.type)[1].toLowerCase()).join(' + '):'gisteren niets gelogd'}
+function weatherText(){return state.today.weather==='regen'?'regen':state.today.weather==='wind'?'veel wind':state.today.weather==='heet'?'warm':'droog'}
+function bestTraining(){const {energy:e,soreness:s,time:t,mood:m,weather:w}=state.today,bad=w==='regen'||w==='wind',lastS=latest('strength'),lastSw=latest('swim'),lastB=latest('bike');if(e<=3||s>=8)return{title:'Herstelblok',body:'20–30 min rustig wandelen of mobiliteit. Geen zware sets. Eet goed en pak slaap.'};if(m==='zwemmen'&&t>=35)return{title:'Zwemmen',body:'1 km rustig tot gemiddeld. Eerste 200 m kalm, daarna opbouwen.'};if(m==='buiten'&&!bad&&t>=45)return{title:'Fietsen',body:`${Math.min(90,t)} min comfortabel fietsen. Voeg 3 × 4 min stevig toe als je benen goed voelen.`};if(m==='kracht'&&daysSince(lastS)>1&&t>=35)return{title:'Kracht',body:'45–60 min bovenlichaam: pull-up/row, bench/push, shoulder press, lateral raise en armen. 1–2 reps in reserve.'};if(daysSince(lastS)<=1){if(!bad&&t>=45)return{title:'Fietsen',body:'Gisteren kracht gedaan: vandaag 45–75 min rustig fietsen. Wel bewegen, niet dezelfde spieren opnieuw slopen.'};return{title:'Zwemmen',body:'Gisteren kracht gedaan: kies vandaag 1 km zwemmen als actieve hersteltraining.'}}if(daysSince(lastSw)>=3&&t>=35)return{title:'Zwemmen',body:'1 km zwemmen past goed in je week. Rustig beginnen, laatste 300 m iets steviger.'};if(!bad&&daysSince(lastB)>=2&&t>=45)return{title:'Fietsen',body:'45–75 min comfortabel fietsen. Houd genoeg over voor morgen.'};if(t<35)return{title:'Express kracht',body:'20–30 min: 4 rondes rows/pull-ups, push-ups/dips, goblet squat en shoulder press.'};return{title:'Kracht',body:'45–60 min bovenlichaam met pull-ups, presses, rows en schouders. Stop 1–2 reps vóór falen.'}}
+function rec(kind){const p=proteinLeft(),t=state.today.time,train=bestTraining();if(kind==='train')return train;if(kind==='food'){if(p>=70)return{title:'Grote eiwitklapper',body:`Nog ongeveer <b>${p} g</b>. Mik nu op 50–65 g eiwit: kip + rijst + wokgroenten, of tonijn/eieren.`};if(p>=35)return{title:'Eén goede eiwitmaaltijd',body:`Nog ongeveer <b>${p} g</b>. Pak 35–45 g eiwit.`};return{title:'Voeding bijna dicht',body:`Nog ongeveer <b>${p} g</b>. Iets kleins is genoeg; geen kippenboerderij leegtrekken.`}}if(kind==='surprise'){const bad=['regen','wind'].includes(state.today.weather),opts=[];if(!bad&&t>=45)opts.push('Nieuwe-plek-quest: fiets 30–45 min een richting op die je normaal niet kiest. Terug via navigatie. Maak onderweg één foto.');if(t>=30)opts.push('3×10-quest: 10 min wandelen, 10 min kracht, 10 min keukenmissie met minimaal 30 g eiwit.');if(state.today.energy>=6&&state.today.soreness<=6)opts.push('Mini-baasgevecht: 5 rondes van 5 rows/pull-ups, 10 push-ups en 15 squats. Ruim rusten.');opts.push('Reset-quest: 20 min wandelen zonder doel, daarna douche en één nuttige taak van maximaal 10 min.');return{title:'Bonusquest geactiveerd 🎲',body:opts[Math.floor(Math.random()*opts.length)]}}if(recovery()<45)return{title:'Vandaag niet forceren',body:'Je herstel staat laag. Doe 20–30 min rustig bewegen en houd krachttraining kort of sla hem over.'};if(p>=80&&t<40)return{title:'Eerst eten',body:`Je hebt weinig tijd en nog ${p} g eiwit open. Eet eerst, daarna 15–20 min wandelen.`};return{title:`Nu: ${train.title.toLowerCase()}`,body:train.body+(p>=50?' Daarna minimaal 40 g eiwit.':'')}}
+function renderToday(){const n=new Date();$('#dayLabel').textContent=n.toLocaleDateString('nl-NL',{weekday:'long',day:'numeric',month:'long'}).toUpperCase();$('#headline').textContent=`${state.profile.name}, wat is nu een goed idee?`;$('#contextLine').textContent=`${yesterday()} · ${weatherText()}${state.today.temp!=null?' · '+Math.round(state.today.temp)+'°':''}`;const r=rec('now');$('#mission').innerHTML=`<b>🎯 Hoofdmissie:</b> ${r.title}. ${r.body}`;$('#recoveryValue').textContent=recovery()+'%';$('#recoveryText').textContent=recovery()>=75?'goed':recovery()>=55?'redelijk':'rustig aan';$('#energyValue').textContent=state.today.energy+'/10';$('#timeValue').textContent=state.today.time+'m';$('#proteinValue').textContent=proteinLeft()+'g';$('#energyRange').value=state.today.energy;$('#energyRangeVal').textContent=state.today.energy+'/10';$('#sorenessRange').value=state.today.soreness;$('#sorenessRangeVal').textContent=state.today.soreness+'/10';$('#timeSelect').value=String(state.today.time);$('#moodSelect').value=state.today.mood}
+function renderLogs(){const xs=[...state.logs].sort((a,b)=>b.ts-a.ts).slice(0,20);$('#logList').innerHTML=xs.length?xs.map(x=>{const [ico,n]=meta(x.type),d=new Date(x.ts).toLocaleDateString('nl-NL',{weekday:'short',day:'numeric',month:'short'});return `<div class="logitem"><div class="logleft"><div class="logico">${ico}</div><div><div class="logtitle">${n}${x.duration?' · '+x.duration+' min':''}</div><div class="logmeta">${d}${x.note?' · '+escapeHtml(x.note):''}</div></div></div><button class="delete" data-delete="${x.id}">✕</button></div>`}).join(''):'<div class="empty">Nog niets gelogd.</div>';$$('[data-delete]').forEach(b=>b.onclick=()=>{state.logs=state.logs.filter(x=>x.id!==b.dataset.delete);saveState();renderAll()})}
+function renderWeek(){const s=weekStart(),today=localKey();let h='',strength=0,swim=0,bike=0,checks=0;for(let i=0;i<7;i++){const d=new Date(s);d.setDate(s.getDate()+i);const k=localKey(d),xs=state.logs.filter(x=>x.date===k);strength+=xs.filter(x=>x.type==='strength').length;swim+=xs.filter(x=>x.type==='swim').length;bike+=xs.filter(x=>x.type==='bike').reduce((a,b)=>a+(+b.duration||0),0);if(state.checkins[k])checks++;h+=`<div class="daydot ${k===today?'today':''} ${xs.length?'hit':''}"><div class="d">${d.toLocaleDateString('nl-NL',{weekday:'short'}).replace('.','')}</div><div class="n">${d.getDate()}</div><div class="ico">${xs.length?xs.slice(0,2).map(x=>meta(x.type)[0]).join(''):'·'}</div></div>`}$('#weekGrid').innerHTML=h;$('#strengthGoal').textContent=`${strength} / ${state.goals.strength}`;$('#swimGoal').textContent=`${swim} / ${state.goals.swim}`;$('#bikeGoal').textContent=`${bike} / ${state.goals.bikeMinutes} min`;$('#checkinGoal').textContent=`${checks} / 7`;$('#strengthFill').style.width=pct(strength,state.goals.strength)+'%';$('#swimFill').style.width=pct(swim,state.goals.swim)+'%';$('#bikeFill').style.width=pct(bike,state.goals.bikeMinutes)+'%';$('#checkinFill').style.width=pct(checks,7)+'%'}
+function renderGoals(){$('#goalProtein').value=state.goals.protein;$('#goalStrength').value=state.goals.strength;$('#goalSwim').value=state.goals.swim;$('#goalBike').value=state.goals.bikeMinutes;$('#proteinEaten').value=state.today.proteinEaten;$('#waterGlasses').value=state.today.water}
+function renderQuick(){const ts=state.logs.filter(x=>x.date===localKey()).map(x=>x.type);$$('[data-log]').forEach(b=>b.classList.toggle('done',ts.includes(b.dataset.log)))}
+function renderAll(){renderToday();renderLogs();renderWeek();renderGoals();renderQuick();$('#nameInput').value=state.profile.name;$('#weatherInput').value=state.today.weather}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function addLog(type,duration,note=''){state.logs.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),type,duration:+duration||0,note,date:localKey(),ts:Date.now()});saveState();renderAll()}
+function showResult(kind){const r=rec(kind);$('#resultPill').textContent=kind==='surprise'?'BONUSQUEST':'DAYPILOT BESLISSING';$('#resultTitle').textContent=r.title;$('#resultBody').innerHTML=r.body;$('#resultDialog').showModal()}
+$('#energyRange').oninput=e=>$('#energyRangeVal').textContent=e.target.value+'/10';$('#sorenessRange').oninput=e=>$('#sorenessRangeVal').textContent=e.target.value+'/10';$('#saveCheckin').onclick=()=>{state.today.energy=+$('#energyRange').value;state.today.soreness=+$('#sorenessRange').value;state.today.time=+$('#timeSelect').value;state.today.mood=$('#moodSelect').value;state.checkins[localKey()]={energy:state.today.energy,soreness:state.today.soreness,time:state.today.time,mood:state.today.mood,ts:Date.now()};saveState();renderAll();$('#saveCheckin').textContent='✅ Check-in opgeslagen';setTimeout(()=>$('#saveCheckin').textContent='Check-in opslaan',1200)};$$('[data-action]').forEach(b=>b.onclick=()=>showResult(b.dataset.action));$('#closeResult').onclick=()=>$('#resultDialog').close();$$('[data-log]').forEach(b=>b.onclick=()=>addLog(b.dataset.log,{strength:50,swim:35,bike:60,walk:30,rest:0}[b.dataset.log]??45,'snel gelogd'));$('#addLogBtn').onclick=()=>{addLog($('#logType').value,+$('#logDuration').value,$('#logNote').value.trim());$('#logNote').value=''};$('#saveGoals').onclick=()=>{state.goals.protein=+$('#goalProtein').value||180;state.goals.strength=+$('#goalStrength').value||3;state.goals.swim=+$('#goalSwim').value||2;state.goals.bikeMinutes=+$('#goalBike').value||180;saveState();renderAll()};$('#saveNutrition').onclick=()=>{state.today.proteinEaten=+$('#proteinEaten').value||0;state.today.water=+$('#waterGlasses').value||0;saveState();renderAll()};$('#settingsBtn').onclick=()=>$('#settingsDialog').showModal();$('#closeSettings').onclick=()=>$('#settingsDialog').close();$('#saveSettings').onclick=()=>{state.profile.name=$('#nameInput').value.trim()||'Dave';state.today.weather=$('#weatherInput').value;state.today.weatherAuto=false;saveState();renderAll();$('#settingsDialog').close()};$('#weatherBtn').onclick=()=>{if(!navigator.geolocation){alert('Locatie wordt niet ondersteund.');return}$('#weatherBtn').textContent='Locatie en weer ophalen…';navigator.geolocation.getCurrentPosition(async p=>{try{const{latitude,longitude}=p.coords,u=`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,precipitation,wind_speed_10m&timezone=auto`,r=await fetch(u),d=await r.json(),c=d.current||{};state.today.temp=c.temperature_2m??null;state.today.wind=c.wind_speed_10m??null;state.today.weather=(c.precipitation??0)>0?'regen':(c.wind_speed_10m??0)>=28?'wind':(c.temperature_2m??0)>=28?'heet':'goed';state.today.weatherAuto=true;saveState();renderAll();$('#weatherBtn').textContent='✅ Weer bijgewerkt'}catch(e){$('#weatherBtn').textContent='⚠️ Weer ophalen mislukte'}},()=>$('#weatherBtn').textContent='⚠️ Geen locatietoegang',{timeout:10000})};$$('.navbtn').forEach(b=>b.onclick=()=>{$$('.navbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');$$('.view').forEach(x=>x.classList.remove('active'));$('#'+b.dataset.view+'View').classList.add('active');window.scrollTo({top:0,behavior:'smooth'})});
+renderAll();
 </script>
-</body></html>
+</body>
+</html>
